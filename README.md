@@ -1,7 +1,7 @@
 # WOOLIFE (電商V3)
 > 歡迎來到WOOLIFE，這是一份Vuejs電商前端練習V3版(VueCli3+Vuex)。
 ## Demo
-https://ivylee-wu.github.io/IvyLee_WOOLIFE_vue3/#/
+https://ivylee-wu.github.io/IvyLee_WOOLIFE_vue3/dist/#/
 ## 簡介
 此作品為Vuejs前端練習，其主要功能有以下:
 
