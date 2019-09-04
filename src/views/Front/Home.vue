@@ -50,14 +50,14 @@ export default {
   data() {
     return {
       categories: [
-        { name: 'all', title: '全部商品', icon: 'fas fa-gift fa-2x', url: 'pic1' },
-        { name: 'sweater', title: '毛衣', icon: 'fas fa-tshirt fa-2x',  url: 'pic2' },
-        { name: 'shawl', title: '披肩', icon: 'fas fa-socks fa-2x', url:'pic3' },
-        { name: 'scarf', title: '圍巾', icon: 'fas fa-shoe-prints fa-2x', url:'pic4' },
-        { name: 'hat', title: '帽子', icon: 'fas fa-democrat fa-2x', url:'pic5' },
-        { name: 'glove', title: '手套', icon: 'fas fa-shopping-bag fa-2x', url:'pic6' },
-        { name: 'sock', title: '襪子', icon: 'fas fa-shopping-bag fa-2x', url:'pic7' },
-        { name: 'wool', title: '毛線', icon: 'fas fa-shopping-bag fa-2x', url:'pic8' },
+        { name: 'all', title: '全部商品', url: 'pic1' },
+        { name: 'sweater', title: '毛衣', url: 'pic2' },
+        { name: 'shawl', title: '披肩', url:'pic3' },
+        { name: 'scarf', title: '圍巾', url:'pic4' },
+        { name: 'hat', title: '帽子', url:'pic5' },
+        { name: 'glove', title: '手套', url:'pic6' },
+        { name: 'sock', title: '襪子', url:'pic7' },
+        { name: 'wool', title: '毛線', url:'pic8' },
       ],
     };
   },
