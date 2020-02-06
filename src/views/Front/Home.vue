@@ -5,41 +5,35 @@
     <div class="container">
     <!-- category -->
     <ul class="row category pt-5" style="">
-      <li class="col-12 col-lg-6 mb-5 hover" v-for="(category, key) in categories" :key="key"
-       @click.prevent="categoryBtn(category.title)" style="position:relative;">
+      <li
+        class="col-12 col-lg-6 mb-5 hover"
+        v-for="(category, key) in categories"
+        :key="key"
+        @click.prevent="categoryBtn(category.title)"
+        style="position:relative;"
+      >
         <!-- <i :class="category.icon"></i> -->
         <!-- <ul class="" style="overflow: hidden;">
           <li>{{category.name}}</li>
           <li>{{category.title}}</li>
-          <li style="overflow: hidden; width: 600px; height: 700px; position:relative;"><img :src="category.url" alt="" style="position:absolute;
-    top:-20px;left:0; width:100%"></li>
+          <li style="overflow: hidden; width: 600px; height: 700px; position:relative;">
+            <img :src="category.url" alt="" style="position:absolute; top:-20px;left:0; width:100%">
+          </li>
         </ul> -->
-        
           <div class="word">
             <span>{{category.name}}</span>
             <span>{{category.title}}</span>
           </div>
         <div class="pic">
           <div :class="category.url"></div>
-          
         </div>
-        
-        
       </li>
-    </ul>    
+    </ul>
     </div>
-
     <!-- discount -->
-    
-
     <div class="bottomImage"></div>
-
     <!-- news -->
-    
-
     <!-- joinus -->
-    
-
   </div>
 </template>
 
@@ -50,14 +44,54 @@ export default {
   data() {
     return {
       categories: [
-        { name: 'all', title: '全部商品', url: 'pic1' },
-        { name: 'sweater', title: '毛衣', url: 'pic2' },
-        { name: 'shawl', title: '披肩', url:'pic3' },
-        { name: 'scarf', title: '圍巾', url:'pic4' },
-        { name: 'hat', title: '帽子', url:'pic5' },
-        { name: 'glove', title: '手套', url:'pic6' },
-        { name: 'sock', title: '襪子', url:'pic7' },
-        { name: 'wool', title: '毛線', url:'pic8' },
+        {
+          name: 'all',
+          title: '全部商品',
+          icon: 'fas fa-gift fa-2x',
+          url: 'pic1',
+        },
+        {
+          name: 'sweater',
+          title: '毛衣',
+          icon: 'fas fa-tshirt fa-2x',
+          url: 'pic2',
+        },
+        {
+          name: 'shawl',
+          title: '披肩',
+          icon: 'fas fa-socks fa-2x',
+          url: 'pic3',
+        },
+        {
+          name: 'scarf',
+          title: '圍巾',
+          icon: 'fas fa-shoe-prints fa-2x',
+          url: 'pic4',
+        },
+        {
+          name: 'hat',
+          title: '帽子',
+          icon: 'fas fa-democrat fa-2x',
+          url: 'pic5',
+        },
+        {
+          name: 'glove',
+          title: '手套',
+          icon: 'fas fa-shopping-bag fa-2x',
+          url: 'pic6',
+        },
+        {
+          name: 'sock',
+          title: '襪子',
+          icon: 'fas fa-shopping-bag fa-2x',
+          url: 'pic7',
+        },
+        {
+          name: 'wool',
+          title: '毛線',
+          icon: 'fas fa-shopping-bag fa-2x',
+          url: 'pic8',
+        },
       ],
     };
   },
@@ -76,9 +110,6 @@ export default {
         }
       });
     },
-  },
-  components: {
-    
   },
 };
 </script>
@@ -162,7 +193,7 @@ export default {
   }
 }
 .pic4{
-  background-image: url('https://cdn.shopify.com/s/files/1/1072/3400/products/ee6568e1-2a89-47de-b5fe-7f236c096640_1.jpg?v=1537982775');
+  background-image: url('https://images.unsplash.com/photo-1480607891196-1cae9c7827e1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1868&q=80');
   border-radius: 30px;
   background-size: cover;
   width: 500px;
@@ -334,27 +365,5 @@ export default {
     display: flex;
     flex-direction: column-reverse;
   }
-}
-
-//joinus
-.joinus {
-  padding: 5rem;
-  background: url('https://images.unsplash.com/photo-1519974719765-e6559eac2575?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80') center center no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  text-align: center;
-  @media (max-width: 767px) {
-    padding: 5rem 1rem;
-  }
-  h3 {
-    font-family: $font-family-title;
-    color: $white-color;
-    text-shadow: 1px 1px 1px $primary-color;
-  }
-}
-.joinus-content {
-  padding: 3rem 2rem;
-  background: rgba($hot-color, 0.8);
-  border-radius: 10px;
 }
 </style>
